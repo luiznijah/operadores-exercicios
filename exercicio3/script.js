@@ -15,13 +15,13 @@ console.log("     Parte 2");
 const nome =  prompt ("Qual seu nome ?");
 const cpf = Number( prompt ("Digite seu CPF"));
 const nasceu = Number( prompt ("Digite sua data de nascimento"));
-const endereco = Number ( prompt ("Digite seu endereço"));
+const endereco =   prompt ("Digite seu endereço");
 const sFilhos = Number ( prompt ("Possui qunatos filhos ? "));
-const cnh = Number ( prompt ("Possui habilitação ? "));
-const cargo = Number ( prompt ("Qual seu cargo atual ? "));
+const cnh =   prompt ("Possui habilitação ? ");
+const cargo =   prompt ("Qual seu cargo atual ? ");
 const salario = Number ( prompt ("Qual seu salario ? "));
 const comicaoTo = Number ( prompt ("Qual sua comição total de vendas? "));
-const dataEntrada = Number ( prompt ("Qual ano você foi admitido ? "));
+const dataEntrada = Number ( prompt ("Em qual ano você foi admitido ? "));
 
 // calculo de salario
 
@@ -37,11 +37,22 @@ const vMar = 4124.10
 const vA = 1874.00
 const vMai = 7000.00
 const vJu = 9450.00
+const somaMes = 3165.101
 
 //calculos
 
-//nome
+//informações do cliente 
 console.log ("Seu nome é ", nome)
+console.log ("Cpf ",cpf )
+console.log (" Data de nascimento ",nasceu )
+console.log ("Endereço ", endereco)
+console.log ("Filhos ",sFilhos )
+console.log ("Habilitação ",cnh )
+console.log ("Cargo altual ", cargo)
+console.log (" Salario atual ",salario )
+console.log ("Comissão ", comicaoTo)
+console.log ("Ano de admição ",dataEntrada )
+
 
 //1) O salário fixo mais o auxílio creche
 console.log("Seu salário fixo mais o auxílio creche é de :" ,salario + sFilhos * 45.50 )
@@ -79,9 +90,17 @@ console.log ("Junho R$:",salario  + (vJu * 0.10))
 //3) Quanto Fulano de Silva será descontado em janeiro pelo INSS
 
 console.log("INSS desconto de janeiro ",salario + (vF * 0.10)-(desINSS))
+//
 
 //4) Imprima no console o cálculo do salário de todos os meses com acréscimos e descontos
-console.log("Salario + comssão + desconto do INSS", salario+ (vJa * 0.10)+(vF * 0.10)+(vMar * 0.10)+(vA * 0.10)+(vMai * 0.10)+(vJu * 0.10)+(vJa * 0.10))-((salario+ (vJa * 0.10)+(vF * 0.10)+(vMar * 0.10)+(vA * 0.10)+(vMai * 0.10)+(vJu * 0.10)+(vJa * 0.10)*0.05))
+
+
+console.log("Salario + comssão + desconto do INSS", salario + (somaMes- (somaMes* 0.05)))
+
+
+
+console.log("soma de comissão",578.45 + 341.841 + 412.41 + 187.4 + 700 + 945)
 
 // media salarial
-console.log("media salarial", 5743.551/6)
+console.log("media salarial", 5165/6)
+
